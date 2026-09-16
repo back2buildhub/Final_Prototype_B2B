@@ -253,7 +253,7 @@ function renderBody(body: string) {
               <div style={{ fontSize: '12px', color: '#64748B', marginTop: '1px' }}>
                 {selected.project?.title} · {selected.project?.project_code}
               </div>
-              <a href={`/owner/constructor/${selected.constructor_id}`}
+              <a href={`/owner/constructors/${selected.constructor_id}`}
                 style={{ fontSize: '11px', color: '#E8622A', textDecoration: 'none', marginTop: '2px', display: 'inline-block' }}>
                 👤 View Profile →
               </a>

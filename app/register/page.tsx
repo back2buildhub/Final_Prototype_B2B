@@ -52,7 +52,7 @@ export default function RegisterPage() {
     // Save credentials for quick account switching
     saveAccount({ email, password, name, role: role as 'property_owner' | 'constructor' })
 
-    router.push(role === 'constructor' ? '/constructor' : '/owner')
+    router.push(role === 'constructor' ? '/constructors' : '/owner')
   }
 
   const roleCard = (value: string, icon: string, label: string, desc: string) => (

@@ -203,7 +203,7 @@ async function messageRequestOwner(req: any) {
     convId = created?.id
   }
 
-  if (convId) window.location.href = `/constructor/messages?conv=${convId}`
+  if (convId) window.location.href = `/constructors/messages?conv=${convId}`
 }
 
   async function deleteGig(gigId: string) {

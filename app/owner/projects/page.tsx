@@ -319,7 +319,7 @@ export default function OwnerProjects() {
                     >
                       💬 Message Constructor
                     </button>
-                    <a href={`/owner/constructor/${selected.assigned_constructor_id}`}
+                    <a href={`/owner/constructors/${selected.assigned_constructor_id}`}
                       style={{ ...S.btnGhost, padding: '8px 16px', fontSize: '13px', textDecoration: 'none' }}>
                       👤 View Profile
                     </a>
@@ -352,7 +352,7 @@ export default function OwnerProjects() {
                           <div style={{ fontWeight: '600', marginBottom: '2px', fontSize: '15px' }}>
                             {app.profiles?.full_name || 'Constructor'}
                           </div>
-                          <a href={`/owner/constructor/${app.constructor_id}`}
+                          <a href={`/owner/constructors/${app.constructor_id}`}
                             style={{ fontSize: '11px', color: '#E8622A', textDecoration: 'none', display: 'inline-block', marginBottom: '4px' }}>
                             👤 View Profile →
                           </a>

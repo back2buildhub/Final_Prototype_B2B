@@ -35,7 +35,7 @@ export default function AccountSwitcher({ currentEmail }: { currentEmail: string
     }
 
     // Redirect to correct dashboard
-    router.push(account.role === 'constructor' ? '/constructor' : '/owner')
+    router.push(account.role === 'constructor' ? '/constructors' : '/owner')
   }
 
   return (

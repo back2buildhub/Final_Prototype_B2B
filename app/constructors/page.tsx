@@ -45,7 +45,7 @@ export default function ConstructorDashboard() {
           <h1 style={{ fontSize: '22px', fontWeight: '700' }}>Dashboard</h1>
           <p style={{ color: '#64748B', fontSize: '14px', marginTop: '2px' }}>Welcome back, {profile?.full_name}</p>
         </div>
-        <a href="/constructor/projects"><button style={{ ...S.btnPrimary, padding: '10px 18px' }}>🔍 Find Projects</button></a>
+        <a href="/constructors/projects"><button style={{ ...S.btnPrimary, padding: '10px 18px' }}>🔍 Find Projects</button></a>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '24px' }}>
@@ -71,12 +71,12 @@ export default function ConstructorDashboard() {
         <div style={S.card}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
             <h2 style={{ fontSize: '16px', fontWeight: '600' }}>My Projects</h2>
-            <a href="/constructor/projects" style={{ color: '#E8622A', fontSize: '13px' }}>View all →</a>
+            <a href="/constructors/projects" style={{ color: '#E8622A', fontSize: '13px' }}>View all →</a>
           </div>
           {myProjects.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '30px 0' }}>
               <p style={{ color: '#64748B', fontSize: '13px' }}>No projects yet.</p>
-              <a href="/constructor/projects"><button style={{ ...S.btnPrimary, fontSize: '13px', padding: '8px 16px', marginTop: '12px' }}>Browse available projects</button></a>
+              <a href="/constructors/projects"><button style={{ ...S.btnPrimary, fontSize: '13px', padding: '8px 16px', marginTop: '12px' }}>Browse available projects</button></a>
             </div>
           ) : myProjects.slice(0, 5).map(p => (
             <div key={p.id} style={{ padding: '12px 0', borderBottom: '1px solid #1E3A5A', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>

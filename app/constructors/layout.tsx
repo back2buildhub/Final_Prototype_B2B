@@ -51,12 +51,12 @@ export default function ConstructorLayout({ children }: { children: React.ReactN
   )
 
   const links = [
-    { href: '/constructor', label: '📊 Dashboard', exact: true },
-    { href: '/constructor/projects', label: '🔍 Find Projects' },
-    { href: '/constructor/gigs', label: '🎨 My Gigs' },
-    { href: '/constructor/messages', label: '💬 Messages' },
-    { href: '/constructor/ai', label: '🤖 Bass AI' },
-    { href: '/constructor/profile', label: '👤 My Profile' },
+    { href: '/constructors', label: '📊 Dashboard', exact: true },
+    { href: '/constructors/projects', label: '🔍 Find Projects' },
+    { href: '/constructors/gigs', label: '🎨 My Gigs' },
+    { href: '/constructors/messages', label: '💬 Messages' },
+    { href: '/constructors/ai', label: '🤖 Bass AI' },
+    { href: '/constructors/profile', label: '👤 My Profile' },
   ]
 
   return (
@@ -74,7 +74,7 @@ export default function ConstructorLayout({ children }: { children: React.ReactN
               <a key={link.href} href={link.href} style={{ textDecoration: 'none' }}>
                 <div style={{ padding: '10px 12px', borderRadius: '6px', fontSize: '14px', marginBottom: '2px', background: active ? '#2D1A0E' : 'transparent', color: active ? '#FB923C' : '#94A3B8', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <span>{link.label}</span>
-                  {link.href === '/constructor/messages' && unreadCount > 0 && (
+                  {link.href === '/constructors/messages' && unreadCount > 0 && (
                     <span style={{ background: '#E8622A', color: '#fff', borderRadius: '10px', fontSize: '10px', fontWeight: '700', padding: '1px 6px', minWidth: '18px', textAlign: 'center' }}>
                       {unreadCount > 9 ? '9+' : unreadCount}
                     </span>

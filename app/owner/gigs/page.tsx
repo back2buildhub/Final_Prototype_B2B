@@ -277,7 +277,7 @@ export default function OwnerGigs() {
                 <div style={{ fontSize: '12px', color: '#64748B' }}>{selected.constructor_profile?.city}</div>
                 <div style={{ fontWeight: '600', fontSize: '14px' }}>{selected.constructor_profile?.full_name || 'Constructor'}</div>
                 <div style={{ fontSize: '12px', color: '#64748B' }}>{selected.constructor_profile?.city}</div>
-                <a href={`/owner/constructor/${selected.constructor_id}`}
+                <a href={`/owner/constructors/${selected.constructor_id}`}
                   style={{ fontSize: '11px', color: '#E8622A', textDecoration: 'none', marginTop: '4px', display: 'inline-block' }}>
                   👤 View Profile →
                 </a>

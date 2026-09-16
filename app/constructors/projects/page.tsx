@@ -74,7 +74,7 @@ export default function ConstructorProjects() {
   async function messageOwnerFromProject(project: any) {
     if (!user || !project.owner_id) return
     const convId = await createOrGetConversation(project.id, project.owner_id, user.id)
-    if (convId) router.push(`/constructor/messages?conv=${convId}`)
+    if (convId) router.push(`/constructors/messages?conv=${convId}`)
     else showMsg('❌ Could not open message. Try again.')
   }
 
@@ -84,7 +84,7 @@ export default function ConstructorProjects() {
     setMessagingId(project.id)
     const convId = await createOrGetConversation(project.id, project.owner_id, user.id)
     setMessagingId('')
-    if (convId) router.push(`/constructor/messages?conv=${convId}`)
+    if (convId) router.push(`/constructors/messages?conv=${convId}`)
     else showMsg('❌ Could not open message. Try again.')
   }
 
@@ -97,7 +97,7 @@ export default function ConstructorProjects() {
       .select()
       .single()
     if (conv) {
-      router.push(`/constructor/ai?project=${project.id}&conv=${conv.id}`)
+      router.push(`/constructors/ai?project=${project.id}&conv=${conv.id}`)
     }
   }
 

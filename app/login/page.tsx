@@ -32,7 +32,7 @@ export default function LoginPage() {
       saveAccount({ email, password, name: profile.full_name || email, role: profile.role as 'property_owner' | 'constructor' })
     }
 
-    router.push(profile?.role === 'constructor' ? '/constructor' : '/owner')
+    router.push(profile?.role === 'constructor' ? '/constructors' : '/owner')
   }
 
   return (

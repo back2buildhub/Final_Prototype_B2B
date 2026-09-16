@@ -128,7 +128,7 @@ export default function ConstructorAI() {
     setMessages([])
     setProjectContext(null)
     setProjectBanner(null)
-    window.history.pushState({}, '', '/constructor/ai')
+    window.history.pushState({}, '', '/constructors/ai')
     const { data } = await supabase
       .from('ai_messages')
       .select('*')
@@ -141,7 +141,7 @@ export default function ConstructorAI() {
     if (!user) return
     setProjectContext(null)
     setProjectBanner(null)
-    window.history.pushState({}, '', '/constructor/ai')
+    window.history.pushState({}, '', '/constructors/ai')
     const { data } = await supabase
       .from('ai_conversations')
       .insert({ user_id: user.id, title: 'New Conversation' })
@@ -286,7 +286,7 @@ export default function ConstructorAI() {
         <p style={{ color: '#64748B', fontSize: '14px', lineHeight: '1.6', marginBottom: '24px' }}>
           Upgrade to Back2Build Pro for lifetime access to Bass AI, bidding projects, and more — for just LKR 1,000.
         </p>
-        <a href="/constructor/profile" style={{ background: '#E8622A', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: '700', fontSize: '15px' }}>
+        <a href="/constructors/profile" style={{ background: '#E8622A', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: '700', fontSize: '15px' }}>
           ⚡ Upgrade to Pro
         </a>
       </div>

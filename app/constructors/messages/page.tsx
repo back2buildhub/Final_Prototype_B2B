@@ -247,7 +247,7 @@ function renderBody(body: string) {
               <div style={{ fontSize: '12px', color: '#64748B', marginTop: '1px' }}>
                 {selected.project?.title} · {selected.project?.project_code}
               </div>
-              <a href={`/constructor/owner/${selected.owner_id}`}
+              <a href={`/constructors/owner/${selected.owner_id}`}
                 style={{ fontSize: '11px', color: '#E8622A', textDecoration: 'none', marginTop: '2px', display: 'inline-block' }}>
                 👤 View Profile →
               </a>
@@ -262,7 +262,7 @@ function renderBody(body: string) {
                 setConversations(prev => prev.filter(c => c.id !== selected.id))
                 setSelected(null)
                 setMessages([])
-                window.history.pushState({}, '', '/constructor/messages')
+                window.history.pushState({}, '', '/constructors/messages')
               }}
               style={{ marginLeft: 'auto', background: 'none', border: '1px solid #7F1D1D', color: '#F87171', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'pointer' }}
               title="Delete conversation"
